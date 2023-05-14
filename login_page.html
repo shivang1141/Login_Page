@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Link to your CSS file here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content-wrapper">
+            <div class="background-blur"></div>
+            <h1>Hello Again!</h1>
+            <h2>Welcome back, you've been missed!</h2>
+
+            <form id="login-form" action="/login" method="post">
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span id="toggle-password" class="password-toggle-icon">👁</span>
+                </div>
+
+                <a href="/forgot-password">Forgot password?</a>
+
+                <input type="submit" value="Sign in">
+            </form>
+
+            <div id="social-login">
+                <p>Or continue with </p>
+                <a href="/auth/google"><img src="icons/google-logo.svg" alt="Google Login" width="30"></a>
+                <a href="/auth/apple"><img src="icons/apple-logo.svg" alt="Apple Login" width="30"></a>
+                <a href="/auth/facebook"><img src="icons/facebook-logo.svg" alt="Facebook Login" width="30"></a>
+            </div>
+
+            <p>Not a member? <a href="/register">Register now</a></p>
+        </div>
+
+
+
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
